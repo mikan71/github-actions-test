@@ -11,7 +11,7 @@ jobs:
     - name: Dmm acsses
       run: wget -O "dmm.html" https://www.dmm.com/
     - name: Upload Artifact
-+     uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v4
       with:
-+       name: my-artifact-${{ matrix.runs-on }}
+        name: my-artifact-${{ matrix.runs-on }}
         path: dmm.html
