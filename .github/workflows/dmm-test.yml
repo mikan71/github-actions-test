@@ -6,9 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Dmm acsses
-      run: wget -O "dmm.html" https://www.dmm.com/
+      run: wget -O "dmm-ajax.json" https://book.dmm.com/ajax/bff/content/?shop_name=general&content_id=b600ysgk01887
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: dmm
-        path: dmm.html
+        name: dmm ajax json
+        path: dmm-ajax.json
