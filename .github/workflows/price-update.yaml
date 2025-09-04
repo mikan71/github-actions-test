@@ -5,18 +5,11 @@ jobs:
   upload:
     runs-on: ubuntu-latest
     steps:
-    - name: path
-      run: pwd
-    - name: cd
-      run: cd priceUpdate
+    - name: Checkout
+      uses: actions/checkout@v4
     - name: Init
-      run: bash ./init.sh
+      run: bash priceUpdate/init.sh
     - name: file find chack
       run: ls
     - name: package.json chack
       run: more ./package.json
-    # - name: Upload Artifact
-    #   uses: actions/upload-artifact@v4
-    #   with:
-    #     name: dmm product html
-    #     path: dmm-product.html
