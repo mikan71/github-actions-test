@@ -7,10 +7,10 @@ jobs:
     steps:
     - name: path
       run: pwd
-    - name: ls
-      run: ls
+    - name: cd
+      run: cd priceUpdate
     - name: Init
-      run: bash ./priceUpdate/init.sh
+      run: bash ./init.sh
     - name: file find chack
       run: ls
     - name: package.json chack
