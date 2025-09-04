@@ -5,6 +5,10 @@ jobs:
   upload:
     runs-on: ubuntu-latest
     steps:
+    - name: path
+      run: pwd
+    - name: ls
+      run: ls
     - name: Init
       run: bash priceUpdate/init.sh
     - name: file find chack
