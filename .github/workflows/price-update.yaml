@@ -10,7 +10,7 @@ jobs:
     - name: ls
       run: ls
     - name: Init
-      run: bash priceUpdate/init.sh
+      run: bash ./priceUpdate/init.sh
     - name: file find chack
       run: ls
     - name: package.json chack
