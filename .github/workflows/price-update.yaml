@@ -8,7 +8,7 @@ jobs:
     - name: Init
       run: bash priceUpdate/init.sh
     - name: file find chack
-      run ls
+      run: ls
     - name package.json chack
       run more ./package.json
     # - name: Upload Artifact
