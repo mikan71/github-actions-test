@@ -1,14 +1,14 @@
-# name: dmm acsses test
-# run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-# on: [push]
-# jobs:
-#   upload:
-#     runs-on: ubuntu-latest
-#     steps:
-#     - name: Dmm acsses
-#       run: wget -O "dmm-product.html" https://book.dmm.com/product/560006/b316bgtsy01136/
-#     - name: Upload Artifact
-#       uses: actions/upload-artifact@v4
-#       with:
-#         name: dmm product html
-#         path: dmm-product.html
+name: dmm acsses test
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Dmm acsses
+      run: wget -O "dmm-product.html" https://book.dmm.com/product/560006/b316bgtsy01136/
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: dmm product html
+        path: dmm-product.html
