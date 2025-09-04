@@ -9,8 +9,8 @@ jobs:
       run: bash priceUpdate/init.sh
     - name: file find chack
       run: ls
-    - name package.json chack
-      run more ./package.json
+    - name: package.json chack
+      run: more ./package.json
     # - name: Upload Artifact
     #   uses: actions/upload-artifact@v4
     #   with:
