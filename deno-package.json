@@ -1,0 +1,7 @@
+{
+	"name": "ebook-price-auto-update",
+	"dependencies": {
+		"cloudflare": "^4.5.0",
+		"html-rewriter-wasm": "^0.4.1"
+	}
+}
