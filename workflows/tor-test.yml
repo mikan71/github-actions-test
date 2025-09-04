@@ -1,0 +1,12 @@
+name: dmm acsses test
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - uses: tor-actions/setup-tor@main
+          # with:
+          # tor-version: '0.4.5.7' # The Tor version to download (if necessary) and use.
+      - run: tor
